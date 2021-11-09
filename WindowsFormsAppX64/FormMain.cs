@@ -18,7 +18,7 @@ namespace WindowsFormsAppX64
     private void FormMain_Load(object sender, EventArgs e)
     {
       string alphabet = "abcdefghijklmnopqrstuvwxyz";
-      for (int i = 0; i < 100000; i++)
+      for (int i = 0; i < 100_000; i++)
       {
         chaine += alphabet;
       }
@@ -48,8 +48,8 @@ namespace WindowsFormsAppX64
       // magnitude is 0 for bytes, 1 for KB, 2, for MB, etc.
       int magnitude = (int)Math.Log(value, 1024);
 
-      // 1L << (mag * 10) == 2 ^ (10 * mag) 
-      // [i.e. the number of bytes in the unit corresponding to mag]
+      // 1L << (magnitude * 10) == 2 ^ (10 * mag) 
+      // [i.e. the number of bytes in the unit corresponding to magnitude]
       decimal adjustedSize = (decimal)value / (1L << (magnitude * 10));
 
       // make adjustment when the value is large enough that
