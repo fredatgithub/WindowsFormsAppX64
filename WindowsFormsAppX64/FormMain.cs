@@ -41,9 +41,20 @@ namespace WindowsFormsAppX64
     private static string SizeSuffix(long value, int decimalPlaces = 1)
     {
       string[] SizeSuffixes = { "bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB" };
-      if (decimalPlaces < 0) { throw new ArgumentOutOfRangeException(nameof(decimalPlaces)); }
-      if (value < 0) { return "-" + SizeSuffix(-value, decimalPlaces); }
-      if (value == 0) { return string.Format("{0:n" + decimalPlaces + "} bytes", 0); }
+      if (decimalPlaces < 0) 
+      {
+        throw new ArgumentOutOfRangeException(nameof(decimalPlaces)); 
+      }
+      
+      if (value < 0) 
+      {
+        return "-" + SizeSuffix(-value, decimalPlaces); 
+      }
+      
+      if (value == 0) 
+      {
+        return string.Format("{0:n" + decimalPlaces + "} bytes", 0); 
+      }
 
       // magnitude is 0 for bytes, 1 for KB, 2, for MB, etc.
       int magnitude = (int)Math.Log(value, 1024);
