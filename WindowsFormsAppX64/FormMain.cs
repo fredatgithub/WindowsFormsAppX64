@@ -35,7 +35,7 @@ namespace WindowsFormsAppX64
       }
 
       Process proc = Process.GetCurrentProcess();
-      labelRamUsed.Text = $"This application is using  {SizeSuffix(proc.WorkingSet64)}";
+      labelRamUsed.Text = $"This application is using  {SizeSuffix(proc.WorkingSet64)} of RAM";
     }
 
     private static string SizeSuffix(long value, int decimalPlaces = 1)
