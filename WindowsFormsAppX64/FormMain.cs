@@ -13,7 +13,7 @@ namespace WindowsFormsAppX64
 
     string chaine;
     int dimension = 1000;
-    string[,,] tableau = new string[200, 1000, 1000];
+    string[,,] tableau = new string[200, 1000, 1000]; // 200 millions cells
 
     private void FormMain_Load(object sender, EventArgs e)
     {
