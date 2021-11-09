@@ -36,17 +36,17 @@ namespace WindowsFormsAppX64
       // 
       this.labelRamUsed.AutoSize = true;
       this.labelRamUsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-      this.labelRamUsed.Location = new System.Drawing.Point(27, 37);
+      this.labelRamUsed.Location = new System.Drawing.Point(5, 37);
       this.labelRamUsed.Name = "labelRamUsed";
-      this.labelRamUsed.Size = new System.Drawing.Size(247, 24);
+      this.labelRamUsed.Size = new System.Drawing.Size(370, 24);
       this.labelRamUsed.TabIndex = 0;
-      this.labelRamUsed.Text = "This application is using  ";
+      this.labelRamUsed.Text = "This application is using  X GB of RAM";
       // 
       // FormMain
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(547, 105);
+      this.ClientSize = new System.Drawing.Size(436, 105);
       this.Controls.Add(this.labelRamUsed);
       this.Name = "FormMain";
       this.Text = "App X64";
